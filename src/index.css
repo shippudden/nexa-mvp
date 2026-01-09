@@ -98,7 +98,7 @@ button:focus-visible {
 
 .dropdown {
   width: 100%;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 1rem;
   border: none;
   border-radius: 10px;
   background: none;
@@ -344,9 +344,9 @@ input {
     width: 70%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 5x76p) {
   .dropdown {
-    width: 200%;
+    width: 280%;
   }
 
   .property-card {
@@ -373,6 +373,46 @@ input {
 
   .success-container {
     width: 70%;
+  }
+}
+
+@media (max-width: 414px) {
+  .dropdown {
+    width: 350%;
+  }
+
+  .container h1 {
+    font-size: 2.5em;
+  }
+
+  .property-card {
+    width: 80%;
+  }
+
+  .text-thumbnail2 {
+      position: absolute;
+      bottom: 18%;
+      right: 18%;
+  }
+
+  .property-details {
+    width: 90%;
+  }
+
+  .agent-container {
+    width: 90%;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+
+  .contact-agent-btn {
+    font-size: 1rem;
+  }
+
+  .success-container {
+    width: 80%;
   }
 }
 

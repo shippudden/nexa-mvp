@@ -3,8 +3,9 @@ import { agents } from "../data/agents"
 
 export default function Contact() {
   const { agentId } = useParams()
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   const agent = agents.find(agent => agent.id === Number(agentId))
+  const phone = agent.phone.replace(/D/g, '')
 
   if (!agent) {
     return <div>Agent not found</div>
@@ -23,7 +24,7 @@ export default function Contact() {
         <input type="text" placeholder="Your phone number" />
         <button 
           className="contact-agent-btn" 
-          onClick={() => navigate(`/success`)}
+          onClick={() => window.open(`https://wa.me/${phone}?text=Hi%20I%20saw%20your%20property%20on%20Nexa%20Space`)}
           >
             Contact Agent via whatsapp
         </button>
